@@ -84,30 +84,6 @@ exports.addCustomer = async (req, res) => {
   res.render("customer/add", locals);
 };
 
-/**
- * POST /
- * Create New Customer
- */
-
-// router.post('/add',upload,async (req, res)=>{console.log(req.body);
-//   const newCustomer = new Customer({
-//     firstName: req.body.firstName,
-//     lastName: req.body.lastName,
-//     details: req.body.details,
-//     tel: req.body.tel,
-//     email: req.body.email,
-//     image:req.file.image,       
-//   });
-//   try {
-//     await Customer.create(newCustomer);
-//     await req.flash("info", "New customer has been added.");
-
-//     res.redirect("/");
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
-//   )
 
 const path = require('path');
 const uploads = path.join('uploads');
